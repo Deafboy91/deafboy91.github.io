@@ -2,7 +2,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: #ffffff url('../img/bg.png') repeat;
+    background: #ffffff url('../img/bg.jpg') repeat;
 }
 
 .logo {
@@ -149,7 +149,7 @@ h4 {
     height: 50px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 30px auto;
+    background-size: 40px auto;
 }
 
 .icon-body {
