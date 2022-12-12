@@ -80,7 +80,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.25
             }),
             new app.BodyModel({
                 name: 'Mach 8',
@@ -95,7 +96,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0.25
             }),
             new app.BodyModel({
                 name: 'Steel Driver',
@@ -110,7 +112,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.5,
                 grip: 0,
-                miniturbo: -0.5
+                miniturbo: -0.5,
+                invincibility: 0.75
             }),
             new app.BodyModel({
                 name: 'Cat Cruiser',
@@ -125,7 +128,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: 0
             }),
             new app.BodyModel({
                 name: 'Circuit Special',
@@ -140,7 +144,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.25,
                 grip: -0.5,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.75
             }),
             new app.BodyModel({
                 name: 'Tri-Speeder',
@@ -155,7 +160,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.5,
                 grip: 0,
-                miniturbo: -0.5
+                miniturbo: -0.5,
+                invincibility: 0.75
             }),
             new app.BodyModel({
                 name: 'Badwagon',
@@ -170,7 +176,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: 0.5,
-                miniturbo: -1
+                miniturbo: -1,
+                invincibility: 1
             }),
             new app.BodyModel({
                 name: 'Prancer',
@@ -185,7 +192,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.5
             }),
             new app.BodyModel({
                 name: 'Biddybuggy',
@@ -200,7 +208,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0.5,
                 grip: 0.25,
-                miniturbo: 0.75
+                miniturbo: 0.75,
+                invincibility: -0.75
             }),
             new app.BodyModel({
                 name: 'Landship',
@@ -215,7 +224,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: 0.75,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.5
             }),
             new app.BodyModel({
                 name: 'Sneeker',
@@ -230,7 +240,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0,
                 grip: -0.75,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.5
             }),
             new app.BodyModel({
                 name: 'Sports Coupe',
@@ -245,7 +256,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0.25
             }),
             new app.BodyModel({
                 name: 'Gold Standard',
@@ -260,7 +272,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0,
                 grip: -0.75,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
             new app.BodyModel({
                 name: 'GLA',
@@ -275,7 +288,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: 0.5,
-                miniturbo: -1
+                miniturbo: -1,
+                invincibility: 1
             }),
             new app.BodyModel({
                 name: 'W 25 Silver Arrow',
@@ -290,7 +304,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0.25,
                 grip: 0.5,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: 0
             }),
             new app.BodyModel({
                 name: '300 SL Roadster',
@@ -305,7 +320,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0.25
             }),
             new app.BodyModel({
                 name: 'Blue Falcon',
@@ -320,7 +336,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: 0.5,
                 grip: 0,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
             new app.BodyModel({
                 name: 'Tanooki Kart',
@@ -335,7 +352,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 1,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
             new app.BodyModel({
                 name: 'B Dasher',
@@ -350,7 +368,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.25,
                 grip: -0.5,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.75
             }),
 			new app.BodyModel({
 				name: 'Streetle',
@@ -365,7 +384,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: 0.75,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.25
             }),
 			new app.BodyModel({
                 name: 'P-Wing',
@@ -380,7 +400,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.25,
                 grip: -0.5,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.75
             }),
 			new app.BodyModel({
                 name: 'Koopa Clown',
@@ -395,7 +416,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 1,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0
             }),
             new app.BodyModel({
                 name: 'Standard Bike',
@@ -410,7 +432,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0.25,
                 grip: 0.5,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.BodyModel({
                 name: 'Comet',
@@ -426,6 +449,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingGty: 0,
                 grip: 0,
                 miniturbo: 0.25,
+                invincibility: -0.25,
                 insideDrift: true
             }),
             new app.BodyModel({
@@ -442,6 +466,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingGty: -0.25,
                 grip: -0.25,
                 miniturbo: -0.25,
+                invincibility: 0,
                 insideDrift: true
             }),
             new app.BodyModel({
@@ -457,7 +482,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.BodyModel({
                 name: 'Flame Rider',
@@ -472,7 +498,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0.25,
                 grip: 0.5,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.BodyModel({
                 name: 'Varmint',
@@ -487,7 +514,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.5
             }),
             new app.BodyModel({
                 name: 'Mr Scooty',
@@ -502,7 +530,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0.5,
                 grip: 0.25,
-                miniturbo: 0.75
+                miniturbo: 0.75,
+                invincibility: -0.75
             }),
             new app.BodyModel({
                 name: 'Jet Bike',
@@ -518,6 +547,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingGty: -0.25,
                 grip: -0.25,
                 miniturbo: -0.25,
+                invincibility: 0,
                 insideDrift: true
             }),
             new app.BodyModel({
@@ -534,6 +564,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingGty: 0,
                 grip: 0,
                 miniturbo: 0.25,
+                invincibility: -0.25,
                 insideDrift: true
             }),
             new app.BodyModel({
@@ -550,6 +581,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingGty: 0,
                 grip: -0.75,
                 miniturbo: -0.25,
+                invincibility: 0,
                 insideDrift: true
             }),
 			new app.BodyModel({
@@ -565,7 +597,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 1,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0
             }),
 			new app.BodyModel({
                 name: 'City Tripper',
@@ -580,7 +613,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.5
             }),
             new app.BodyModel({
                 name: 'Standard ATV',
@@ -595,7 +629,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: 0.5,
-                miniturbo: -1
+                miniturbo: -1,
+                invincibility: 0.75
             }),
             new app.BodyModel({
                 name: 'Wild Wiggler',
@@ -610,7 +645,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0.25,
                 grip: 0.5,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.5
             }),
             new app.BodyModel({
                 name: 'Teddy Buggy',
@@ -625,7 +661,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: 0
             }),
 			new app.BodyModel({
                 name: 'Bone Rattler',
@@ -640,7 +677,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.5,
                 grip: 0,
-                miniturbo: -0.5
+                miniturbo: -0.5,
+                invincibility: 0.5
             }),
 				new app.BodyModel({
                 name: 'Splat Buggy',
@@ -655,7 +693,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: 0.5,
                 grip: 0,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0
             }),
 			new app.BodyModel({
                 name: 'Inkstriker',
@@ -670,7 +709,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             })
         ]);
         var myTires = new app.TireCollection([
@@ -687,7 +727,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Monster',
@@ -702,7 +743,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.75,
                 grip: 0.5,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.5
             }),
             new app.TireModel({
                 name: 'Roller',
@@ -717,7 +759,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0.25,
                 grip: -0.25,
-                miniturbo: 0.75
+                miniturbo: 0.75,
+                invincibility: -0.75
             }),
             new app.TireModel({
                 name: 'Slim',
@@ -732,7 +775,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: -1,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'Slick',
@@ -747,7 +791,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.25,
                 grip: -1.25,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'Metal',
@@ -762,7 +807,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: -0.75,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.5
             }),
             new app.TireModel({
                 name: 'Button',
@@ -777,7 +823,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: -0.5,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Off-Road',
@@ -792,7 +839,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: -0.5
+                miniturbo: -0.5,
+                invincibility: 0.75
             }),
             new app.TireModel({
                 name: 'Sponge',
@@ -807,7 +855,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Wood',
@@ -822,7 +871,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: -1,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'Cushion',
@@ -837,7 +887,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: 0.5
             }),
             new app.TireModel({
                 name: 'Blue Standard',
@@ -852,7 +903,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Hot Monster',
@@ -867,7 +919,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.75,
                 grip: 0.5,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.5
             }),
             new app.TireModel({
                 name: 'Azure Roller',
@@ -882,7 +935,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0.25,
                 grip: -0.25,
-                miniturbo: 0.75
+                miniturbo: 0.75,
+                invincibility: -0.75
             }),
             new app.TireModel({
                 name: 'Crimson Slim',
@@ -897,7 +951,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: -1,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'Cyber Slick',
@@ -912,7 +967,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.25,
                 grip: -1.25,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'Retro Off-Road',
@@ -927,7 +983,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: -0.5
+                miniturbo: -0.5,
+                invincibility: 0.75
             }),
             new app.TireModel({
                 name: 'Gold Tires',
@@ -942,7 +999,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: -0.75,
-                miniturbo: -0.75
+                miniturbo: -0.75,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'GLA Tires',
@@ -957,7 +1015,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0.25
             }),
             new app.TireModel({
                 name: 'Triforce Tires',
@@ -972,7 +1031,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: -0.5
+                miniturbo: -0.5,
+                invincibility: 0.5
             }),
 			new app.TireModel({
                 name: 'Ancient Tires',
@@ -987,7 +1047,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.75,
                 grip: 0.5,
-                miniturbo: -0.25
+                miniturbo: -0.25,
+                invincibility: 0.25
             }),
 			new app.TireModel({
                 name: 'Leaf Tires',
@@ -1002,7 +1063,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: -0.5,
-                miniturbo: 0.5
+                miniturbo: 0.5,
+                invincibility: -0.25
             })
         ]);
         var myGliders = new app.GliderCollection([
@@ -1019,7 +1081,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Cloud Glider',
@@ -1034,7 +1097,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Wario Wing',
@@ -1049,7 +1113,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Waddle Wing',
@@ -1064,7 +1129,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Peach Parasol',
@@ -1079,7 +1145,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Parachute',
@@ -1094,7 +1161,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Parafoil',
@@ -1109,7 +1177,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Flower Glider',
@@ -1124,7 +1193,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Bowser Kite',
@@ -1139,7 +1209,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Plane Glider',
@@ -1154,7 +1225,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'MKTV Parafoil',
@@ -1169,7 +1241,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             }),
             new app.TireModel({
                 name: 'Gold Glider',
@@ -1184,7 +1257,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
             new app.TireModel({
                 name: 'Hylian Kite',
@@ -1199,7 +1273,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
 			new app.TireModel({
                 name: 'Paraglider',
@@ -1214,7 +1289,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: 0
+                miniturbo: 0,
+                invincibility: 0
             }),
 			new app.TireModel({
                 name: 'Paper Glider',
@@ -1229,7 +1305,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25
+                miniturbo: 0.25,
+                invincibility: -0.25
             })
         ]);
 
@@ -1474,6 +1551,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty1 = data.driver1.handlingGty + data.body1.handlingGty + data.tire1.handlingGty + data.glider1.handlingGty;
                 data.grip1 = data.driver1.grip + data.body1.grip + data.tire1.grip + data.glider1.grip;
                 data.miniturbo1 = data.driver1.miniturbo + data.body1.miniturbo + data.tire1.miniturbo + data.glider1.miniturbo;
+				data.invincibility1 = data.driver1.invincibility + data.body1.invincibility + data.tire1.invincibility + data.glider1.invincibility;
 
                 data.speedGnd1percent = (data.driver1.speedGnd + data.body1.speedGnd + data.tire1.speedGnd + data.glider1.speedGnd) / 6 * 100;
                 data.speedWtr1percent = (data.driver1.speedWtr + data.body1.speedWtr + data.tire1.speedWtr + data.glider1.speedWtr) / 6 * 100;
@@ -1487,6 +1565,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty1percent = (data.driver1.handlingGty + data.body1.handlingGty + data.tire1.handlingGty + data.glider1.handlingGty) / 6 * 100;
                 data.grip1percent = (data.driver1.grip + data.body1.grip + data.tire1.grip + data.glider1.grip) / 6 * 100;
                 data.miniturbo1percent = (data.driver1.miniturbo + data.body1.miniturbo + data.tire1.miniturbo + data.glider1.miniturbo) / 6 * 100;
+                data.invincibility1percent = (data.driver1.invincibility + data.body1.invincibility + data.tire1.invincibility + data.glider1.invincibility) / 6 * 100;
 
                 data.speedGnd1 = removeNegative(data.speedGnd1);
                 data.speedWtr1 = removeNegative(data.speedWtr1);
@@ -1500,6 +1579,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty1 = removeNegative(data.handlingGty1);
                 data.grip1 = removeNegative(data.grip1);
                 data.miniturbo1 = removeNegative(data.miniturbo1);
+                data.invincibility1 = removeNegative(data.invincibility1);
 
                 break;
 
@@ -1517,6 +1597,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty2 = data.driver2.handlingGty + data.body2.handlingGty + data.tire2.handlingGty + data.glider2.handlingGty;
                 data.grip2 = data.driver2.grip + data.body2.grip + data.tire2.grip + data.glider2.grip;
                 data.miniturbo2 = data.driver2.miniturbo + data.body2.miniturbo + data.tire2.miniturbo + data.glider2.miniturbo;
+				data.invincibility2 = data.driver2.invincibility + data.body2.invincibility + data.tire2.invincibility + data.glider2.invincibility;
 
                 data.speedGnd2percent = (data.driver2.speedGnd + data.body2.speedGnd + data.tire2.speedGnd + data.glider2.speedGnd) / 6 * 100;
                 data.speedWtr2percent = (data.driver2.speedWtr + data.body2.speedWtr + data.tire2.speedWtr + data.glider2.speedWtr) / 6 * 100;
@@ -1530,6 +1611,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty2percent = (data.driver2.handlingGty + data.body2.handlingGty + data.tire2.handlingGty + data.glider2.handlingGty) / 6 * 100;
                 data.grip2percent = (data.driver2.grip + data.body2.grip + data.tire2.grip + data.glider2.grip) / 6 * 100;
                 data.miniturbo2percent = (data.driver2.miniturbo + data.body2.miniturbo + data.tire2.miniturbo + data.glider2.miniturbo) / 6 * 100;
+                data.invincibility2percent = (data.driver2.invincibility + data.body2.invincibility + data.tire2.invincibility + data.glider2.invincibility) / 6 * 100;
 
                 data.speedGnd2 = removeNegative(data.speedGnd2);
                 data.speedWtr2 = removeNegative(data.speedWtr2);
@@ -1543,6 +1625,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty2 = removeNegative(data.handlingGty2);
                 data.grip2 = removeNegative(data.grip2);
                 data.miniturbo2 = removeNegative(data.miniturbo2);
+                data.invincibility2 = removeNegative(data.invincibility2);
 
                 break;
 
@@ -1560,6 +1643,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty3 = data.driver3.handlingGty + data.body3.handlingGty + data.tire3.handlingGty + data.glider3.handlingGty;
                 data.grip3 = data.driver3.grip + data.body3.grip + data.tire3.grip + data.glider3.grip;
                 data.miniturbo3 = data.driver3.miniturbo + data.body3.miniturbo + data.tire3.miniturbo + data.glider3.miniturbo;
+				data.invincibility3 = data.driver3.invincibility + data.body3.invincibility + data.tire3.invincibility + data.glider3.invincibility;
 
                 data.speedGnd3percent = (data.driver3.speedGnd + data.body3.speedGnd + data.tire3.speedGnd + data.glider3.speedGnd) / 6 * 100;
                 data.speedWtr3percent = (data.driver3.speedWtr + data.body3.speedWtr + data.tire3.speedWtr + data.glider3.speedWtr) / 6 * 100;
@@ -1573,6 +1657,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty3percent = (data.driver3.handlingGty + data.body3.handlingGty + data.tire3.handlingGty + data.glider3.handlingGty) / 6 * 100;
                 data.grip3percent = (data.driver3.grip + data.body3.grip + data.tire3.grip + data.glider3.grip) / 6 * 100;
                 data.miniturbo3percent = (data.driver3.miniturbo + data.body3.miniturbo + data.tire3.miniturbo + data.glider3.miniturbo) / 6 * 100;
+                data.invincibility3percent = (data.driver3.invincibility + data.body3.invincibility + data.tire3.invincibility + data.glider3.invincibility) / 6 * 100;
 
                 data.speedGnd3 = removeNegative(data.speedGnd3);
                 data.speedWtr3 = removeNegative(data.speedWtr3);
@@ -1586,6 +1671,7 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
                 data.handlingGty3 = removeNegative(data.handlingGty3);
                 data.grip3 = removeNegative(data.grip3);
                 data.miniturbo3 = removeNegative(data.miniturbo3);
+                data.invincibility3 = removeNegative(data.invincibility3);
 
                 break;
         };
@@ -1607,10 +1693,10 @@ app.BuildView = Backbone.Marionette.ItemView.extend({
         this.model.trigger('set:activeGlider');
     },
     clearBuild: function () {
-        this.model.set('driver' + this.build, { name: '', size: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0 });
-        this.model.set('body' + this.build, { name: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0 });
-        this.model.set('tire' + this.build, { name: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0 });
-        this.model.set('glider' + this.build, { name: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0 });
+        this.model.set('driver' + this.build, { name: '', size: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0, invincibility: 0 });
+        this.model.set('body' + this.build, { name: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0, invincibility: 0 });
+        this.model.set('tire' + this.build, { name: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0, invincibility: 0 });
+        this.model.set('glider' + this.build, { name: '', speedGnd: 0, speedWtr: 0, speedAir: 0, speedGty: 0, acceleration: 0, weight: 0, handlingGnd: 0, handlingWtr: 0, handlingAir: 0, handlingGty: 0, grip: 0, miniturbo: 0, invincibility: 0 });
         this.model.trigger('set:activeDriver');
         this.model.trigger('set:activeBody');
         this.model.trigger('set:activeTire');

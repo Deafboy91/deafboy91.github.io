@@ -36,6 +36,7 @@ app.LightDriverModel0 = Backbone.Model.extend({
         handlingGty: 5,
         grip: 4.25,
         miniturbo: 4,
+        invincibility: 4,
         active: false
     }
 });
@@ -56,6 +57,7 @@ app.LightDriverModel1 = Backbone.Model.extend({
         handlingGty: 4.75,
         grip: 3.75,
         miniturbo: 4,
+        invincibility: 4,
         active: false
     }
 });
@@ -76,6 +78,7 @@ app.LightDriverModel2 = Backbone.Model.extend({
         handlingGty: 4.5,
         grip: 4,
         miniturbo: 3.75,
+        invincibility: 4,
         active: false
     }
 });
@@ -96,6 +99,7 @@ app.LightDriverModel3 = Backbone.Model.extend({
         handlingGty: 4.5,
         grip: 4.25,
         miniturbo: 3.75,
+        invincibility: 3.75,
         active: false
     }
 });
@@ -116,6 +120,7 @@ app.LightDriverModel4 = Backbone.Model.extend({
         handlingGty: 4.25,
         grip: 3.5,
         miniturbo: 3.75,
+        invincibility: 3.75,
         active: false
     }
 });
@@ -136,6 +141,7 @@ app.LightDriverModel5 = Backbone.Model.extend({
         handlingGty: 4.25,
         grip: 4,
         miniturbo: 3.5,
+        invincibility: 3.5,
         active: false
     }
 });
@@ -156,6 +162,7 @@ app.MediumDriverModel0 = Backbone.Model.extend({
         handlingGty: 4,
         grip: 3.75,
         miniturbo: 3.5,
+        invincibility: 3.5,
         active: false
     }
 });
@@ -176,6 +183,7 @@ app.MediumDriverModel1 = Backbone.Model.extend({
         handlingGty: 3.75,
         grip: 3.75,
         miniturbo: 3.5,
+        invincibility: 3.25,
         active: false
     }
 });
@@ -196,6 +204,7 @@ app.MediumDriverModel2 = Backbone.Model.extend({
         handlingGty: 3.75,
         grip: 3.25,
         miniturbo: 3.5,
+        invincibility: 3.25,
         active: false
     }
 });
@@ -216,6 +225,7 @@ app.MediumDriverModel3 = Backbone.Model.extend({
         handlingGty: 3.75,
         grip: 3.25,
         miniturbo: 3.25,
+        invincibility: 3.25,
 		active: false
     }
 });
@@ -236,6 +246,7 @@ app.MediumDriverModel4 = Backbone.Model.extend({
         handlingGty: 3.5,
         grip: 3.5,
         miniturbo: 3.25,
+        invincibility: 3.25,
 		active: false
     }
 });
@@ -256,6 +267,7 @@ app.HeavyDriverModel0 = Backbone.Model.extend({
         handlingGty: 3.25,
         grip: 3.75,
         miniturbo: 3.25,
+        invincibility: 3,
 		active: false
     }
 });
@@ -276,6 +288,7 @@ app.HeavyDriverModel1 = Backbone.Model.extend({
         handlingGty: 3,
         grip: 3,
         miniturbo: 3,
+        invincibility: 2.75,
         active: false
     }
 });
@@ -296,6 +309,7 @@ app.HeavyDriverModel2 = Backbone.Model.extend({
         handlingGty: 2.75,
         grip: 3.25,
         miniturbo: 2.75,
+        invincibility: 2.75,
         active: false
     }
 });
@@ -316,6 +330,7 @@ app.HeavyDriverModel3 = Backbone.Model.extend({
         handlingGty: 3.25,
         grip: 3.25,
         miniturbo: 3,
+        invincibility: 2.75,
         active: false
     }
 });
@@ -336,6 +351,7 @@ app.HeavyDriverModel4 = Backbone.Model.extend({
         handlingGty: 2.5,
         grip: 3,
         miniturbo: 2.75,
+        invincibility: 2.75,
         active: false
     }
 });

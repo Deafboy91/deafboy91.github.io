@@ -14,6 +14,7 @@ app.TireModel = Backbone.Model.extend({
         handlingAir: 0,
         handlingGty: 0,
         grip: 0,
-        miniturbo: 0
+        miniturbo: 0,
+        invincibility: 0
     }
 });
