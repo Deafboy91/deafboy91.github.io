@@ -24,6 +24,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
             new app.HeavyDriverModel0({ name: 'Rosalina', size: 'Large' }),
 			new app.MediumDriverModel2({ name: 'Tanooki Mario', size: 'Medium' }),
 			new app.MediumDriverModel0({ name: 'Cat Peach', size: 'Medium' }),
+            new app.MediumDriverModel1({ name: 'Birdo', size: 'Medium', incomplete: true }),
             new app.MediumDriverModel1({ name: 'Yoshi', size: 'Medium' }),
             new app.LightDriverModel5({ name: 'Toad', size: 'Small' }),
             new app.LightDriverModel3({ name: 'Koopa Troopa', size: 'Small' }),
@@ -65,7 +66,8 @@ app.Layout = Backbone.Marionette.Layout.extend({
         ]);
         var myBodies = new app.BodyCollection([
             new app.BodyModel({
-                name: 'Standard Kart'
+                name: 'Standard Kart',
+                miniturbo: 0.25,
             }),
             new app.BodyModel({
                 name: 'Pipe Frame',
@@ -96,7 +98,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0.25
             }),
             new app.BodyModel({
@@ -112,7 +114,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.5,
                 grip: 0,
-                miniturbo: -0.5,
+                miniturbo: -0.25,
                 invincibility: 0.75
             }),
             new app.BodyModel({
@@ -128,7 +130,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25,
+                miniturbo: 0.5,
                 invincibility: 0
             }),
             new app.BodyModel({
@@ -144,7 +146,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.25,
                 grip: -0.5,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.75
             }),
             new app.BodyModel({
@@ -160,7 +162,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.5,
                 grip: 0,
-                miniturbo: -0.5,
+                miniturbo: -0.25,
                 invincibility: 0.75
             }),
             new app.BodyModel({
@@ -176,7 +178,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: 0.5,
-                miniturbo: -1,
+                miniturbo: -0.75,
                 invincibility: 1
             }),
             new app.BodyModel({
@@ -192,7 +194,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.5
             }),
             new app.BodyModel({
@@ -240,7 +242,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0,
                 grip: -0.75,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.5
             }),
             new app.BodyModel({
@@ -256,7 +258,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0.25
             }),
             new app.BodyModel({
@@ -272,7 +274,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0,
                 grip: -0.75,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
             new app.BodyModel({
@@ -288,7 +290,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: 0.5,
-                miniturbo: -1,
+                miniturbo: -0.75,
                 invincibility: 1
             }),
             new app.BodyModel({
@@ -320,7 +322,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0.25
             }),
             new app.BodyModel({
@@ -336,7 +338,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: 0.5,
                 grip: 0,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
             new app.BodyModel({
@@ -352,7 +354,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 1,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
             new app.BodyModel({
@@ -368,7 +370,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.25,
                 grip: -0.5,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.75
             }),
 			new app.BodyModel({
@@ -400,7 +402,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.25,
                 grip: -0.5,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.75
             }),
 			new app.BodyModel({
@@ -416,7 +418,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 1,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0
             }),
             new app.BodyModel({
@@ -448,7 +450,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25,
+                miniturbo: 0.5,
                 invincibility: -0.25,
                 insideDrift: true
             }),
@@ -465,7 +467,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0,
                 insideDrift: true
             }),
@@ -482,7 +484,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0
             }),
             new app.BodyModel({
@@ -546,7 +548,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: -0.25,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0,
                 insideDrift: true
             }),
@@ -563,7 +565,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25,
+                miniturbo: 0.5,
                 invincibility: -0.25,
                 insideDrift: true
             }),
@@ -580,7 +582,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0,
                 grip: -0.75,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0,
                 insideDrift: true
             }),
@@ -597,7 +599,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 1,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0
             }),
 			new app.BodyModel({
@@ -629,7 +631,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: 0.5,
-                miniturbo: -1,
+                miniturbo: -0.75,
                 invincibility: 0.75
             }),
             new app.BodyModel({
@@ -661,7 +663,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0.25,
+                miniturbo: 0.5,
                 invincibility: 0
             }),
 			new app.BodyModel({
@@ -677,7 +679,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.5,
                 grip: 0,
-                miniturbo: -0.5,
+                miniturbo: -0.25,
                 invincibility: 0.5
             }),
 				new app.BodyModel({
@@ -693,7 +695,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: 0.5,
                 grip: 0,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0
             }),
 			new app.BodyModel({
@@ -709,7 +711,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: 0.25,
                 grip: 0.25,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0
             })
         ]);
@@ -727,7 +729,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0
             }),
             new app.TireModel({
@@ -743,7 +745,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.75,
                 grip: 0.5,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.5
             }),
             new app.TireModel({
@@ -775,7 +777,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: -1,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -791,7 +793,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.25,
                 grip: -1.25,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -807,7 +809,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: -0.75,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.5
             }),
             new app.TireModel({
@@ -839,7 +841,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: -0.5,
+                miniturbo: -0.25,
                 invincibility: 0.75
             }),
             new app.TireModel({
@@ -855,7 +857,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: 0.25,
+                miniturbo: 0.5,
                 invincibility: 0
             }),
             new app.TireModel({
@@ -871,7 +873,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: -1,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -887,7 +889,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: 0.25,
+                miniturbo: 0.5,
                 invincibility: 0.5
             }),
             new app.TireModel({
@@ -903,7 +905,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0
             }),
             new app.TireModel({
@@ -919,7 +921,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.75,
                 grip: 0.5,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.5
             }),
             new app.TireModel({
@@ -951,7 +953,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0.25,
                 handlingGty: 0,
                 grip: -1,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -967,7 +969,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.25,
                 grip: -1.25,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -983,7 +985,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: -0.5,
+                miniturbo: -0.25,
                 invincibility: 0.75
             }),
             new app.TireModel({
@@ -999,7 +1001,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.75,
                 handlingGty: -0.5,
                 grip: -0.75,
-                miniturbo: -0.75,
+                miniturbo: -0.5,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -1015,7 +1017,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: 0,
                 handlingGty: 0,
                 grip: 0,
-                miniturbo: 0,
+                miniturbo: 0.25,
                 invincibility: 0.25
             }),
             new app.TireModel({
@@ -1031,7 +1033,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.25,
                 handlingGty: -0.25,
                 grip: 0.25,
-                miniturbo: -0.5,
+                miniturbo: -0.25,
                 invincibility: 0.5
             }),
 			new app.TireModel({
@@ -1047,7 +1049,7 @@ app.Layout = Backbone.Marionette.Layout.extend({
                 handlingAir: -0.5,
                 handlingGty: -0.75,
                 grip: 0.5,
-                miniturbo: -0.25,
+                miniturbo: 0,
                 invincibility: 0.25
             }),
 			new app.TireModel({
