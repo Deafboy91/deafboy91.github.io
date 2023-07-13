@@ -78,7 +78,7 @@ app.LightDriverModel2 = Backbone.Model.extend({
         handlingGty: 4.5,
         grip: 4,
         miniturbo: 4,
-        invincibility: 4,
+        invincibility: 3.75,
         active: false
     }
 });
@@ -99,7 +99,7 @@ app.LightDriverModel3 = Backbone.Model.extend({
         handlingGty: 4.5,
         grip: 4.25,
         miniturbo: 3.75,
-        invincibility: 3.75,
+        invincibility: 3.5,
         active: false
     }
 });
@@ -120,7 +120,7 @@ app.LightDriverModel4 = Backbone.Model.extend({
         handlingGty: 4.25,
         grip: 3.5,
         miniturbo: 3.75,
-        invincibility: 3.75,
+        invincibility: 3.25,
         active: false
     }
 });
@@ -141,7 +141,7 @@ app.LightDriverModel5 = Backbone.Model.extend({
         handlingGty: 4.25,
         grip: 4,
         miniturbo: 3.75,
-        invincibility: 3.5,
+        invincibility: 3.25,
         active: false
     }
 });
@@ -161,8 +161,8 @@ app.MediumDriverModel0 = Backbone.Model.extend({
         handlingAir: 4,
         handlingGty: 4,
         grip: 3.75,
-        miniturbo: 3.5,
-        invincibility: 3.5,
+        miniturbo: 3.75,
+        invincibility: 3.25,
         active: false
     }
 });
@@ -183,7 +183,7 @@ app.MediumDriverModel1 = Backbone.Model.extend({
         handlingGty: 3.75,
         grip: 3.75,
         miniturbo: 3.75,
-        invincibility: 3.25,
+        invincibility: 2.75,
         active: false
     }
 });
@@ -203,8 +203,8 @@ app.MediumDriverModel2 = Backbone.Model.extend({
         handlingAir: 3.75,
         handlingGty: 3.75,
         grip: 3.25,
-        miniturbo: 3.5,
-        invincibility: 3.25,
+        miniturbo: 3.75,
+        invincibility: 2.75,
         active: false
     }
 });
@@ -267,7 +267,7 @@ app.HeavyDriverModel0 = Backbone.Model.extend({
         handlingGty: 3.25,
         grip: 3.75,
         miniturbo: 3.25,
-        invincibility: 3,
+        invincibility: 3.5,
 		active: false
     }
 });
@@ -288,7 +288,7 @@ app.HeavyDriverModel1 = Backbone.Model.extend({
         handlingGty: 3,
         grip: 3,
         miniturbo: 3,
-        invincibility: 2.75,
+        invincibility: 3.5,
         active: false
     }
 });
@@ -309,7 +309,7 @@ app.HeavyDriverModel2 = Backbone.Model.extend({
         handlingGty: 2.75,
         grip: 3.25,
         miniturbo: 2.75,
-        invincibility: 2.75,
+        invincibility: 3.75,
         active: false
     }
 });
@@ -330,7 +330,28 @@ app.HeavyDriverModel3 = Backbone.Model.extend({
         handlingGty: 3.25,
         grip: 3.25,
         miniturbo: 3,
-        invincibility: 2.75,
+        invincibility: 3.25,
+        active: false
+    }
+});
+
+app.HeavyDriverModel3a = Backbone.Model.extend({
+    defaults: {
+        name: '',
+        size: '',
+        speedGnd: 4.25,
+        speedWtr: 4.5,
+        speedAir: 4.75,
+        speedGty: 4,
+        acceleration: 3.25,
+        weight: 4.5,
+        handlingGnd: 3.25,
+        handlingWtr: 2.75,
+        handlingAir: 3.25,
+        handlingGty: 3.25,
+        grip: 3.25,
+        miniturbo: 3,
+        invincibility: 4,
         active: false
     }
 });
@@ -351,7 +372,7 @@ app.HeavyDriverModel4 = Backbone.Model.extend({
         handlingGty: 2.5,
         grip: 3,
         miniturbo: 2.75,
-        invincibility: 2.75,
+        invincibility: 4,
         active: false
     }
 });
