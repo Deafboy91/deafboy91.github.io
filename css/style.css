@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding: 0;
     background: #ffffff url('../img/bg.jpg') repeat;
+    background-image: -webkit-image-set(
+        url("../img/bg.avif"),
+        url("../img/bg.jpg"));
+    background-image: image-set(
+    "../img/bg.avif" type("image/avif"),
+    "../img/bg.jpg" type("image/jpeg")
+    );
 }
 
 .logo {
@@ -34,10 +41,10 @@ body {
     color:#333333;
 }
 .footer a:link {
-    color:#0083c5;
+    color:#075C99;
 }
 .footer a:visited {
-    color:#2159aa;
+    color:#2557A7;
 }
 
 h3 {
@@ -63,6 +70,7 @@ h3 {
     background-image: -moz-linear-gradient(top, #FAFAFA, #D0D0D0);
     background-image: -ms-linear-gradient(top, #FAFAFA, #D0D0D0);
     background-image: -o-linear-gradient(top, #FAFAFA, #D0D0D0);
+    background-image: linear-gradient(to bottom, #FAFAFA, #D0D0D0);
 }
 
     h3.selectable {
@@ -77,6 +85,7 @@ h3 {
             background-image: -moz-linear-gradient(top, #D0D0D0, #FAFAFA);
             background-image: -ms-linear-gradient(top, #D0D0D0, #FAFAFA);
             background-image: -o-linear-gradient(top, #D0D0D0, #FAFAFA);
+            background-image: linear-gradient(to bottom, #D0D0D0, #FAFAFA);
         }
 
     h3.selected {
@@ -89,6 +98,7 @@ h3 {
         background-image: -moz-linear-gradient(top, #666666, #aeaeae);
         background-image: -ms-linear-gradient(top, #666666, #aeaeae);
         background-image: -o-linear-gradient(top, #666666, #aeaeae);
+        background-image: linear-gradient(to bottom, #666666, #aeaeae);
     }
 
 h4 {
@@ -116,6 +126,7 @@ h4 {
     background-image: -moz-linear-gradient(top, #FAFAFA, #D0D0D0);
     background-image: -ms-linear-gradient(top, #FAFAFA, #D0D0D0);
     background-image: -o-linear-gradient(top, #FAFAFA, #D0D0D0);
+    background-image: linear-gradient(to bottom, #FAFAFA, #D0D0D0);
 }
 
     .item:hover {
@@ -126,6 +137,7 @@ h4 {
         background-image: -moz-linear-gradient(top, #D0D0D0, #FAFAFA);
         background-image: -ms-linear-gradient(top, #D0D0D0, #FAFAFA);
         background-image: -o-linear-gradient(top, #D0D0D0, #FAFAFA);
+        background-image: linear-gradient(to bottom, #D0D0D0, #FAFAFA);
     }
 
 .item-static {
@@ -142,6 +154,7 @@ h4 {
     background-image: -moz-linear-gradient(top, #FAFAFA, #D0D0D0);
     background-image: -ms-linear-gradient(top, #FAFAFA, #D0D0D0);
     background-image: -o-linear-gradient(top, #FAFAFA, #D0D0D0);
+    background-image: linear-gradient(to bottom, #FAFAFA, #D0D0D0);
 }
 
 .icon-driver {
@@ -198,6 +211,7 @@ h4 {
     background-image: -moz-linear-gradient(top, #666666, #aeaeae);
     background-image: -ms-linear-gradient(top, #666666, #aeaeae);
     background-image: -o-linear-gradient(top, #666666, #aeaeae);
+    background-image: linear-gradient(to bottom, #666666, #aeaeae);
 }
 
 

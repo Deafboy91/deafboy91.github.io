@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Description" CONTENT="Build and compare karts for Mario Kart 8 Deluxe!">
-    <title>Mario Kart 8 Deluxe Builder 1.5</title>
+    <title>Mario Kart 8 Deluxe Builder 1.6</title>
     
 
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
@@ -25,7 +26,7 @@
         <div id="content"></div>
     </div>
     <div class="footer">
-        <img src="img/incomplete.png" width="10"/> The hidden stats data based on game version: 2.4.0 | <img src="img/drift.png"/> = Inward Drift<br />
+        <img src="img/incomplete.png" width="10"/> The hidden stats data based on game version: 3.0.0 | <img src="img/drift.png"/> = Inward Drift<br />
         <a href="//www.mariowiki.com/Mario_Kart_8_Deluxe" target="_blank">Super Mario Wiki</a> | <a href="//docs.google.com/spreadsheets/d/1g7A-38tn9UAIbB2B3sZI-MpILsS3ZS870UTVMRRxh4Q/edit#gid=0" target="_blank">Luigi_Fan2's MK8 Deluxe Stat Chart</a> | <a href="//japan-mk.blog.jp/mk8dx.wiki" target="_blank">Japan Mario Kart Blog</a><br />
         Credit: Tobias Mattsson (Original Creator)<br />
         Powered by Javascripts: <a href="//backbonejs.org/" target="_blank">backbone.js</a> | <a href="//marionettejs.com/" target="_blank">marionette.js</a> | <a href="//handlebarsjs.com/" target="_blank">handlebars.js</a><br />
@@ -66,8 +67,8 @@
 
     <script id="driver-template" type="text/x-handlebars">
         <div class="{{#unless active}}item {{/unless}}{{#if active}}item-selected {{/if}}driver" style="position:relative">
-            <div class="icon-driver{{#if active}} icon-selected{{/if}}" style="background-image: url('img/drivers/{{name}}.png');" title="{{name}}" alt="{{name}}">
-                {{#if incomplete}}<div style="position:absolute;top:-5px;left:-5px;"><img src="img/incomplete.png" /></div>{{/if}}
+            <div class="icon-driver{{#if active}} icon-selected{{/if}}" style="background-image: url('img/drivers/{{name}}.png')" title="{{name}}" alt="{{name}}">
+                {{#if incomplete}}<div style="position:absolute;top:-7.5px;left:-7.5px;"><img src="img/new.png" /></div>{{/if}}
             </div>
         </div>
     </script>
